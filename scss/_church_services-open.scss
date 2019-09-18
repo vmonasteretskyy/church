@@ -1,0 +1,298 @@
+.church_services-open {
+    .first-screen {
+        background-image: url(../img/church_services-open/banner.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 22.5rem;
+        position: relative;
+    }
+}
+
+.church-services-open-desc {
+    padding-bottom: 2.8rem;
+    &__text {
+        margin: 0;
+        margin-bottom: 4rem;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: $main;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+    }
+    &__info {
+        font-weight: 500;
+        font-size: 1.1rem;
+        p {
+            margin: 0;
+            >a:hover {
+                color: $main;
+            }
+        }
+        >span {
+            display: inline-block;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+    }
+    &__btn {
+        width: 17.5rem;
+        height: 3.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        >svg {
+            fill: $wh;
+            margin-right: 1.2rem;
+        }
+    }
+}
+
+.link-see-all {
+    display: flex;
+    align-items: center;
+    color: $text-s;
+    text-transform: none;
+    transition: 0.4s;
+    >svg {
+        fill: $text-s;
+        margin-right: .5rem;
+        transition: 0.4s;
+    }
+    &:hover {
+        color: $main;
+        >svg {
+            fill: $main;
+        }
+    }
+}
+
+.church-services-open__title {
+    color: $main;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    h2 {
+        display: inline-block;
+        margin-right: 2rem;
+        font-size: 1.75rem;
+    }
+    span {
+        font-size: 1.2rem;
+    }
+}
+
+.photo {
+    background-color: $bg-light-gray;
+    padding: 2rem 0 3rem;
+    margin-bottom: 3.5rem;
+}
+
+.slider-photo {
+    &__items {
+        width: 100%;
+        display: block;
+        >img {
+            width: 100%;
+        }
+    }
+}
+
+.slider-photo,
+.slider-video {
+    .col-12 {
+        &:focus {
+            outline: none;
+        }
+    }
+    .slick-next,
+    .slick-prev {
+        top: 50%;
+        &::before {
+            line-height: 20px;
+        }
+    }
+    .slick-prev {
+        left: -15px;
+    }
+    .slick-next {
+        right: -15px;
+    }
+}
+
+.slider-video {
+    margin-bottom: 4rem;
+}
+
+.video-content {
+    width: 100%;
+    &:focus {
+        outline: none;
+    }
+    &__video {
+        width: 100%;
+        height: 13.5rem;
+        margin-bottom: 1.2rem;
+        .youtube {
+            height: 100%;
+            width: 100%;
+        }
+        >iframe {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &__title {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        &:hover {
+            color: $main;
+        }
+    }
+    p {
+        margin: 0;
+        height: 2.8rem;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width:991.8px) {
+    .church-services-open-desc {
+        &__text {
+            margin-bottom: 3rem;
+        }
+        &__title {
+            margin-bottom: 1.8rem;
+        }
+        &__info {
+            >span {
+                padding-top: 1.6rem;
+                padding-bottom: 0.8rem;
+            }
+        }
+    }
+    .church-services-open__title {
+        h2 {
+            margin-right: 1.4rem;
+        }
+        span {
+            font-size: 1rem;
+        }
+    }
+
+    .video-content {
+        &__video {
+            height: 8rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            height: 4.2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 767.8px) {
+    .church-services-open-desc {
+        &__title {
+            margin-top: 1.4rem;
+        }
+    }
+    .church-services-open__title {
+        h2 {
+            margin-right: 0;
+        }
+        span {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 575.8px) {
+    .church_services-open {
+        .first-screen {
+            height: 16.5rem;
+        }
+    }
+    .photo {
+        .slider-photo {
+            .col-12 {
+                margin-bottom: 5.5rem;
+            }
+        }
+    }
+    .video-content {
+        margin-bottom: 5.5rem;
+        &__video {
+            height: 12rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            height: 4.2rem;
+        }
+    }
+
+    .slider-video {
+        margin-bottom: 2rem;
+    }
+    .slider-photo,
+    .slider-video {
+        .slick-track {
+            &:focus {
+                outline: none;
+            }
+        }
+        .slick-next,
+        .slick-prev {
+            top: auto;
+            bottom: 0;
+            height: 46px;
+            width: calc(50% - 15px);
+            border: none;
+            background-color: $text-s;
+            z-index: 2;
+            &:focus {
+                outline: none;
+                background-color: $main;
+            }
+            &::before {
+                color: $wh;
+                line-height: 0.5;
+                font-size: 40px;
+            }
+        }
+        .slick-prev {
+            left: 15px;
+        }
+        .slick-next {
+            right: 15px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .slider-photo,
+    .slider-video {
+        .slick-next,
+        .slick-prev {
+            top: 50%;
+            &::before {
+                line-height: 20px;
+            }
+        }
+        .slick-prev {
+            left: -45px;
+        }
+        .slick-next {
+            right: -45px;
+        }
+    }
+}

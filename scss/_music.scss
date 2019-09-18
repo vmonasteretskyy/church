@@ -1,0 +1,49 @@
+.music{
+	&__content{
+		background: $wh;
+		margin-bottom: 4rem;
+	}
+	&-list{
+		padding: 2rem 6rem;
+		&__item{
+			margin-bottom: 3rem;
+			color:  #919191;
+		}
+	}
+	&__about{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__autor{
+		margin-right: 0.5rem;
+	}
+	audio{
+		width: 100%;
+	}
+	.reload-more{
+		width: auto;
+	}
+}
+
+@media (max-width: 991.8px) {
+	.music{
+		&-list{
+			padding: 2rem 2rem;
+		}
+		.reload-more{
+			font-size: 1rem;
+		}
+	}
+    
+}
+@media (max-width: 576px) {
+	.music{
+		&-list{
+			padding: 2rem 1rem;
+		}
+		&__content{
+			margin-bottom: 2rem;
+		}
+	}
+    
+}

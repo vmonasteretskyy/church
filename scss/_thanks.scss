@@ -1,0 +1,42 @@
+.thanks{
+	min-height: 85%;
+	padding: 7.5rem 0;
+	text-align: center;
+	padding-top: 8.5rem;
+	color: $main;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	h2{
+		font-size: 3.438rem;
+		margin-bottom: 2.5rem;
+	}
+	p{
+		font-size: 1.5rem;
+	}
+	.btn{
+		margin-top: 6rem;
+		padding: 1rem 3rem;
+	}
+}
+
+@media (max-width : 575px)   {
+	.thanks{
+		min-height: 65%;
+		padding: 5rem 0;
+		padding-top: 6rem;
+		h2{
+		font-size: 3.438rem;
+		margin-bottom: 2.5rem;
+		}
+		p{
+			font-size: 1rem;
+		}
+		.btn{
+			margin-top: 2rem;
+		}
+	}
+}

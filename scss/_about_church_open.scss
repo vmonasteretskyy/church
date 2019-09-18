@@ -1,0 +1,84 @@
+.about-church-open {
+    .first-screen {
+        background-image: url(../img/about_chorch/banner-about-church-open.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 22.5rem;
+        position: relative;
+    }
+}
+
+.about-church-open__title {
+    color: $main-s;
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 0.9;
+    text-transform: uppercase;
+    display: block;
+}
+
+.list-quotes {
+    font-size: 1rem;
+    margin-bottom: 4rem;
+    >li {
+        border-bottom: 1px solid #e2e2e2;
+        padding: 2rem 0;
+        &:first-child {
+            padding-top: 0;
+        }
+        >p{
+            margin-top: 0;
+            margin-bottom: 1.7rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199.8px) {
+    
+    .list-quotes {
+        >li {
+            padding: 1.8rem 0;
+            >p{
+                margin-top: 0;
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991.8px) {
+    html {
+        font-size: 16px !important;
+    }
+
+    .about-church-open__title {
+        font-size: 5.6rem;
+    }
+    
+}
+
+@media only screen and (max-width: 767.8px) {
+
+    .about-church-open__title {
+        font-size: 4.6rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 575.8px) {
+    .about-church-open {
+        .first-screen {
+            height: 16.5rem;
+        }
+    }
+    .list-quotes {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1520px) {
+    .about-church-open__title {
+        font-size: 10rem;
+    }
+}

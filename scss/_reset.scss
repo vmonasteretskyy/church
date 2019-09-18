@@ -1,0 +1,71 @@
+ol ol,
+ul ul,
+ol ul,
+ul ol{
+	margin-bottom: 0;
+}
+
+img{
+	vertical-align: middle;
+	border-style: none;
+}
+
+svg:not(:root){
+	overflow: hidden;
+}
+
+input:focus, textarea:focus{
+	border: 1px solid $main-s !important;
+	outline: none;
+}
+ input, textarea{
+ 	font-family: $font;
+ 	color: $text;
+ }
+input[type="submit"]:focus{
+	outline: none;
+}
+
+button{
+	border-radius: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 700;
+	line-height: 1.2;
+	margin-top: 0;
+ 	margin-bottom: 0.5rem;
+}
+
+h1{
+	font-size: 1.75em;
+}
+
+
+h2{
+	font-size: 1.2em;
+}
+
+
+h3{
+	font-size: 0.9em;
+}
+
+
+h4{
+	font-size: 0.8em;
+}
+
+
+h5{
+	font-size: 0.7em;
+}
+
+
+h6{
+	font-size: 0.6em;
+}
+
+button:focus {
+	outline: none;
+}
